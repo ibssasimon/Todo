@@ -9,7 +9,7 @@ function TODOHero ({todosCompleted, totalTodos}) {
                 <p>Keep pushing!</p>
             </div>
             <div>
-                {todosCompleted} / (totalTodos)
+                {todosCompleted} / {totalTodos}
             </div>
         </section>
     )

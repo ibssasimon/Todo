@@ -1,16 +1,18 @@
 // form component. Takes user text input and returns todo
-
+const handleSubmit = (event) => {
+    // prevent form from submitting and reloading the entire app
+    event?.preventDefault();
+    // reset form
+    event?.target.reset();
+};
 function Form() {
-    const handleSubmit = (event) => {
-        // prevent form from submitting and reloading the entire app
-        event.preventDefault();
-        // reset form
-        event.target.reset();
-    };
+    
 
     // return component
     return (
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={
+            handleSubmit()
+        }>
             <label htmlFor="todo">
                 <input
                     type="text"
@@ -21,7 +23,7 @@ function Form() {
             </label>
 
             <button>
-                <span className="visually-hidden">Submit</span>
+                <span className="submit_button">+</span>
                 <svg>
                     <path d="" />
                 </svg>
