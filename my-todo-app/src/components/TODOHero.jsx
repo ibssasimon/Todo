@@ -1,18 +1,18 @@
 // dynamic TODO Hero Component. Displays completed tasks and remaining tasks.
 // takes as input todosCompleted and totalTodos as props
 
-function TODOHero ({totalTodos, todosCompleted}) {
+function TODOHero({ todosCompleted, totalTodos }) {
     return (
-        <section>
-            <div>
-                <p>Task Done</p>
-                <p>Keep pushing!</p>
-            </div>
-            <div>
-                {totalTodos} / {todosCompleted}
-            </div>
-        </section>
-    )
-}
-
-export default TODOHero;
+      <section className="todohero_section">
+        <div>
+          <p className="text_large">Task Done</p>
+          <p className="text_small">Keep it up</p>
+        </div>
+        <div>
+          {todosCompleted}/{totalTodos}
+        </div>
+      </section>
+    );
+  }
+  
+  export default TODOHero;

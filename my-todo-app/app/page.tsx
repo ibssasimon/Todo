@@ -22,7 +22,7 @@ function Home() {
       <Header />
       <TODOHero todosCompleted={todosCompleted} totalTodos ={totalTodos}/>
       <Form setTodos={setTodos}/>
-      <TODOList todos={todos} />
+      <TODOList todos={todos} setTodos={setTodos} />
     </div>
   )
 }
